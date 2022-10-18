@@ -21,3 +21,15 @@
   background: #000;
   opacity: 0.001;
 }
+
+
+p {
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  padding-top: 10pt;
+}
+
+body {
+  background-color: lightsteelblue;
+}
