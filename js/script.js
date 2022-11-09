@@ -10,13 +10,13 @@
 
 function submit() {
   const TAX_RATE = 0.18
-  
+
   // input
   const numberOfHours = parseFloat(
     document.getElementById("worked-hours").value
   )
   const hourlyRate = parseFloat(document.getElementById("hourly-rate").value)
-  
+
   // process
   const governmentTake = numberOfHours * hourlyRate * TAX_RATE
   const homePay = numberOfHours * hourlyRate - governmentTake
