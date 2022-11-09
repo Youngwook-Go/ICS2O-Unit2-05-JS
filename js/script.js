@@ -5,17 +5,18 @@
 // This file contains the JS functions for index1.html
 "use strict"
 /**
- * This function gets users hom pay.
+ * This function gets users home pay.
  */
 
 function submit() {
+  const TAX_RATE = 0.18
+  
   // input
   const numberOfHours = parseFloat(
     document.getElementById("worked-hours").value
   )
   const hourlyRate = parseFloat(document.getElementById("hourly-rate").value)
-  const TAX_RATE = 0.18
-
+  
   // process
   const governmentTake = numberOfHours * hourlyRate * TAX_RATE
   const homePay = numberOfHours * hourlyRate - governmentTake
